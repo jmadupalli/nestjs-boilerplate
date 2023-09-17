@@ -19,7 +19,7 @@ import { EntityHelper } from 'src/utils/entity-helper';
 import { AuthProvidersEnum } from 'src/auth/auth-providers.enum';
 import { Exclude, Expose } from 'class-transformer';
 
-@Entity()
+@Entity("users")
 export class User extends EntityHelper {
   @PrimaryGeneratedColumn()
   id: number;
